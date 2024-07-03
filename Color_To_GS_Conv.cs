@@ -50,8 +50,10 @@ public class GrayScaleConvert{
         
         int imgStride = imgData.Stride;
         int imgOffset = imgStride - (width*3);
+
         int newStride = newImgData.Stride;
         int newOffset = newStride - width;
+
 
         unsafe
         {
